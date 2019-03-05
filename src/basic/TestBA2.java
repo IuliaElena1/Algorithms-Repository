@@ -1,4 +1,4 @@
-package Basic;
+package basic;
 
 public class TestBA2 {
 	/*Scrieti intr-o clasa numita TestBA2 o metoda care primeste ca parametru un sir de numere intregi si returneaza cate numere negative

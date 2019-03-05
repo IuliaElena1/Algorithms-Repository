@@ -1,4 +1,4 @@
-package Easy;
+package easy;
 
 import java.lang.Character.Subset;
 

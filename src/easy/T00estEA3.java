@@ -1,4 +1,4 @@
-package Easy;
+package easy;
 
 public class T00estEA3 {
 	/*Scrieti intr-o clasa numita TestEA3 o metoda care primeste ca parametru un numar pozitiv

@@ -1,4 +1,4 @@
-package Basic;
+package basic;
 
 public class TestBA10 {
 	/*Scrieti intr-o clasa numita TestBA10 o metoda care primeste ca parametru o matrice patratica si returneaza suma elementelor de pe diagonala

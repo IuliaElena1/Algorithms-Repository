@@ -1,4 +1,4 @@
-package Easy;
+package easy;
 
 public class TestEA120000 {
 	/* Scrieti intr-o clasa numita TestEA12 o metoda care primeste un ca parametru un sir de numere arr si un numar 

@@ -1,4 +1,4 @@
-package Basic;
+package basic;
 
 public class TestBA7 {
 /*	Scrieti intr-o clasa numita TestBA7 o metoda care primeste ca parametru un sir de numere pozitive si un numar n si 

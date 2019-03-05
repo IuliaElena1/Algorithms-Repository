@@ -1,4 +1,4 @@
-package Easy;
+package easy;
 
 public class TestEA8000 {
 	/*Scrieti intr-o clasa numita TestEA8 o metoda care primeste ca parametri doua siruri de 

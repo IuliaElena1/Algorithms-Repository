@@ -1,4 +1,4 @@
-package Basic;
+package basic;
 
 public class TestBA5 {
 /*	Scrieti intr-o clasa numita TestBA5 o metoda care primeste ca parametru un sir de numere si returneaza produsul numerelor nenule din sir.
