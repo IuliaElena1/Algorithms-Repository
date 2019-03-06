@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Arrays;
 
-public class TestEA120000 {
+public class TestEA12 {
 	/* Scrieti intr-o clasa numita TestEA12 o metoda care primeste un ca parametru un sir de numere arr si un numar 
 	  * intreg pos ce reprezinta o pozitie din sir si returneaza un sir de dimensiune arr.length - 1 rezultat din 
 	  * eliminarea elementului de pe pozitia pos. Daca pozitia este in afara sirului se va returna null
@@ -18,7 +18,6 @@ public class TestEA120000 {
 	    for (int i = 0; i < result.length+1; i++) {
 	    	
 	    	if( i == pos) {
-
 	    		continue;}
     		result[indexResult]=arr[i];
     		indexResult++;
