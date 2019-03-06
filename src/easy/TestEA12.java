@@ -10,8 +10,8 @@ public class TestEA12 {
 	 * elementului de pe pozitia pos. Daca pozitia este in afara sirului se va
 	 * returna null
 	 * 
-	 * removePosition( {5, 8, 11, 3, 6}, 0 ) -> {8, 11, 3, 6} removePosition( {5, 8,
-	 * 11, 3, 6}, 4 ) -> {5, 8, 11, 3}
+	 * removePosition( {5, 8, 11, 3, 6}, 0 ) -> {8, 11, 3, 6}
+	 * 
 	 */
 
 	public static int[] removePosition(int[] arr, int pos) {
