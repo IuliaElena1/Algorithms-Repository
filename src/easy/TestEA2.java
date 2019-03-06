@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Arrays;
 
-public class T00estEA2 {
+public class TestEA2 {
 	/*
 	 * Scrieti intr-o clasa numita TestEA2 o metoda care primeste ca parametru un
 	 * numar pozitiv intreg n si returneaza true daca numarul respectiv este

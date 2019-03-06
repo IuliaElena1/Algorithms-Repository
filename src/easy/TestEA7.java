@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Arrays;
 
-public class T00estEA7 {
+public class TestEA7 {
 
 	/*
 	 * Scrieti intr-o clasa numita TestEA7 o metoda care primeste un sir de numere
@@ -48,7 +48,7 @@ public class T00estEA7 {
 	public static void main(String[] args) {
 		int[] sir = { 6, 8, 2, 1, 4, 9 };
 		System.out.println("Array sorted " + Arrays.toString(sortArray(sir)));
-		 System.out.println( "thSmallest " +nthSmallest(sir,4));
+		 System.out.println( "thSmallest " +nthSmallest(sir,5));
 	}
 
 }
