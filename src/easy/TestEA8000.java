@@ -15,6 +15,14 @@ public class TestEA8000 {
 	// contains({1, 2, 3, 4, 2, 1, 3, 4} = a , {2, 3, 4} = b) -> true
 
 	public static boolean contains(int[] a, int[] b) {
+
+		if (a.length == 0) {
+			return false;
+		}
+		if (b.length == 0) {
+			return true;
+		}
+
 		int[] d = containsArray(a, b);
 		int dNumber = numberToArray(d);
 		int bNumber = numberToArray(b);
@@ -59,9 +67,11 @@ public class TestEA8000 {
 	}
 
 	public static void main(String[] args) {
-
-		int[] a = { 1, 2, 3, 4, 1, 9, 8 };
-		int[] b = { 2, 4, 3 };
+		// pentru cazul asta nu trece pentru a sunt elemente duplicate ,daca as elimina
+		// elementele duplicate iar nu cred ca ar
+		// fi o solutie pentru ca arrayul mai mic ar putea contine el elemente duplicate
+		int[] a = { 1, 2, 3, 4, 2, 1, 3, 4 };
+		int[] b = { 1, 4, 3 };
 
 		System.out.println(contains(a, b));
 	}
