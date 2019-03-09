@@ -5,11 +5,6 @@ public class TestEA10 {
 	 * Scrieti intr-o clasa numita TestEA10 o metoda care primeste un parametru
 	 * numeric n >= 0 si returneaza al n-lea element din sirul lui Fibonacci. Daca n
 	 * este negativ metoda returneaza -1.
-	 * 
-	 * Sirul lui Fibonacci este dat de urmatoarea formula:
-	 * 
-	 * fibo(0) = 0 fibo(1) = 1 fibo(n) = fibo(n-1) + fibo(n-2) Semnatura metodei
-	 * este:
 	 */
 
 	public static int fibo(int n) {
