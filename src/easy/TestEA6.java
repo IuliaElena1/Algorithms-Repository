@@ -2,7 +2,7 @@ package easy;
 
 import java.util.Arrays;
 
-public class TestEA6 {
+public class TestEA6{
 
 	/*Scrieti intr-o clasa numita TestEA6 o metoda care primeste un numar intreg pozitiv ca parametru u, a si b si returneaza un
 	sir de int cu cifrele numarului.
