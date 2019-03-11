@@ -16,7 +16,7 @@ public class TestEA7 {
 
 	public static int nthSmallest(int[] sir, int n) {
 
-		sir = sortArray(sir);
+		sortArray(sir);
 		int nthSmallest = sir[n-1];
 
 		return nthSmallest;
