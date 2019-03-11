@@ -20,12 +20,13 @@ public class TestEA8000 {
     for (int i = 0; i < a.length; i++) {
       if (b[bIndex] == a[i]) {
         bIndex++;
-      }
+      
       if (bIndex == b.length) {
         return true;
-      }
+       }
 
-    }
+     }
+    } 	    
 
     return false;
   }
