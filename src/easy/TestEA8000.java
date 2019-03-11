@@ -14,65 +14,30 @@ public class TestEA8000 {
 
 	// contains({1, 2, 3, 4, 2, 1, 3, 4} = a , {2, 3, 4} = b) -> true
 
-	public static boolean contains(int[] a, int[] b) {
 
-		if (a.length == 0) {
-			return false;
-		}
-		if (b.length == 0) {
-			return true;
-		}
+  public static boolean contains(int[] a, int[] b) {
+    int bIndex = 0;
+    for (int i = 0; i < a.length; i++) {
+      if (b[bIndex] == a[i]) {
+        bIndex++;
+      }
+      if (bIndex == b.length) {
+        return true;
+      }
 
-		int[] d = containsArray(a, b);
-		int dNumber = numberToArray(d);
-		int bNumber = numberToArray(b);
+    }
 
-		if (dNumber == bNumber) {
-			return true;
-		}
+    return false;
+  }
 
-		return false;
-	}
+  public static void main(String[] args) {
 
-	public static int numberToArray(int[] array) {
-		int number = array[0];
+    int[] a = { 1, 2, 3, 4, 2, 1, 3, 4 };
+    int[] b = { 1, 2, 3 };
 
-		for (int i = 1; i < array.length; i++) {
-			number = number * 10 + array[i];
+    System.out.println(contains(a, b));
 
-		}
+  }
+}
 
-		return number;
-
-	}
-
-	public static int[] containsArray(int[] a, int[] b) {
-		int[] c = new int[b.length];
-		int found = 0;
-		int indexC = 0;
-		for (int j = 0; j < b.length; j++) {
-			for (int i = found; i < a.length; i++) {
-
-				if (a[i] == b[j]) {
-					found = i;
-					c[indexC] = a[found];
-					indexC++;
-					found++;
-
-				}
-			}
-		}
-
-		return c;
-	}
-
-	public static void main(String[] args) {
-		// pentru cazul asta nu trece pentru a sunt elemente duplicate ,daca as elimina
-		// elementele duplicate iar nu cred ca ar
-		// fi o solutie pentru ca arrayul mai mic ar putea contine el elemente duplicate
-		int[] a = { 1, 2, 3, 4, 2, 1, 3, 4 };
-		int[] b = { 1, 4, 3 };
-
-		System.out.println(contains(a, b));
-	}
 }
