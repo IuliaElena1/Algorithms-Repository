@@ -37,4 +37,5 @@ public class TestEA12 {
 		int[] arr = { 5, 8, 11, 3, 6 };
 		System.out.println(Arrays.toString(removePosition(arr, 2)));
 	}
+	
 }
