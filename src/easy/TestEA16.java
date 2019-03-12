@@ -21,34 +21,44 @@ public class TestEA16 {
 	 * }
 	 */
 
-	private static int countAppearances(int[] a, int[] b) {
+public static int countAppearances(int[] a, int[] b) {
 
-		int[] partOfC = new int[b.length];
-		int indexPartC = 0;
-		int count = 0;
-		for (int i = 0; i < b.length; i++) {
+    int count = 0;
 
-			int[] c = Arrays.copyOfRange(a, i * b.length, b.length * (i + 1));
-			System.out.println(Arrays.toString(c));
+    for (int i = 0; i < a.length; i++) {
 
-			partOfC[indexPartC] = c[i];
-			indexPartC++;
+      int[] c = Arrays.copyOfRange(a, i, i + b.length);
+      System.out.println(Arrays.toString(c));
 
-			if (partOfC != b) {
-				// aici as vrea sa ma reintorc la bucla forului ca sa ia urmatorul vector sa il
-				// compare
+      if (containsAppearaance(b, c)) {
+        count++;
+      }
+    }
 
-			}
+    return count;
 
-			count++;
-		}
-		return count;
-	}
+  }
 
-	public static void main(String[] args) {
-		int[] a = { 1, 2, 3, 2, 3, 4, 1, 6, 3 };
-		int[] b = { 1, 2, 3 };
+  public static boolean containsAppearaance(int[] a, int[] b) {
 
-		System.out.println(countAppearances(a, b));
-	}
+    int indexB = 0;
+    for (int i = 0; i < a.length; i++) {
+      if (b[indexB] == a[i]) {
+        indexB++;
+        if (indexB == b.length) {
+          return true;
+        }
+      }
+    }
+    return false;
+
+  }
+
+  public static void main(String[] args) {
+
+    int[] a = { 1, 1, 2, 1, 2, 1, 1, 1 };
+    int[] b = { 1 };
+    System.out.println(countAppearances(a, b));
+  }
+
 }
