@@ -54,7 +54,6 @@ public class TestEA18 {
 	}
 
 	public static int[] sumArray(int[] arr) {
-		int sum = 0;
 
 		int[] arraySum = new int[arraySumDimension(arr)];
 		int indexSum = 0;
@@ -72,7 +71,6 @@ public class TestEA18 {
 
 	public static int arraySumDimension(int[] arr) {
 		int count = 0;
-		int sum = 0;
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 1 + i; j < arr.length; j++) {
