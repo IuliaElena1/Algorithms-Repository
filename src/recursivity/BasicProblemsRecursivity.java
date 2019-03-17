@@ -1,4 +1,4 @@
-package Recursivity;
+package recursivity;
 
 public class BasicProblemsRecursivity {
 
