@@ -1,3 +1,4 @@
+package easy;
 public class TestEA18 {
   /* Scrieti intr-o clasa numita TestEA18 o metoda care primeste ca parametru un sir de numere si calculeaza cate dintre ele pot fi exprimate ca suma a altor doua numere din sir.
   countSums( {1, 1, 2, 3} ) -> 2

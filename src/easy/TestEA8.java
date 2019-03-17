@@ -1,6 +1,6 @@
 package easy;
 
-public class TestEA8000 {
+public class TestEA8 {
 	/*
 	 * Scrieti intr-o clasa numita TestEA8 o metoda care primeste ca parametri doua
 	 * siruri de numere a si b si returneaza true daca elementele lui se regasesc in
@@ -14,31 +14,28 @@ public class TestEA8000 {
 
 	// contains({1, 2, 3, 4, 2, 1, 3, 4} = a , {2, 3, 4} = b) -> true
 
+	public static boolean contains(int[] a, int[] b) {
+		int bIndex = 0;
+		for (int i = 0; i < a.length; i++) {
+			if (b[bIndex] == a[i]) {
+				bIndex++;
 
-  public static boolean contains(int[] a, int[] b) {
-    int bIndex = 0;
-    for (int i = 0; i < a.length; i++) {
-      if (b[bIndex] == a[i]) {
-        bIndex++;
-      
-      if (bIndex == b.length) {
-        return true;
-       }
+				if (bIndex == b.length) {
+					return true;
+				}
 
-     }
-    } 	    
+			}
+		}
 
-    return false;
-  }
+		return false;
+	}
 
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 
-    int[] a = { 1, 2, 3, 4, 2, 1, 3, 4 };
-    int[] b = { 1, 2, 3 };
+		int[] a = { 1, 2, 3, 4, 2, 1, 3, 4 };
+		int[] b = { 1, 1, 4 };
 
-    System.out.println(contains(a, b));
+		System.out.println(contains(a, b));
 
-  }
-}
-
+	}
 }
