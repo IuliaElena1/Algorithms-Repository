@@ -44,7 +44,7 @@ public class FillMatrix {
 			return;
 		}
 
-		matrix[x][y] = 2;
+		matrix[x][y] = 5; // matricea primeste valoarea 5 pe coodonatele de mai jos
 		fill(matrix, x - 1, y);
 		fill(matrix, x + 1, y);
 		fill(matrix, x, y - 1);
