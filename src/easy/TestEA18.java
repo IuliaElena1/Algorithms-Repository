@@ -1,7 +1,5 @@
 package easy;
 
-import java.util.Arrays;
-
 public class TestEA18 {
 
 	/*
@@ -22,12 +20,12 @@ public class TestEA18 {
 	 * 
 	 */
 
-	public static int countSums(int[] arr) {
+	public static int countSums(int[] result) {
 		int count = 0;
-		int[] arraySum = sumArray(arr);
-		for (int i = 0; i < arr.length; i++) {
+		int[] arraySum = removeDuplicates(sumArray(result));
+		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < arraySum.length; j++) {
-				if (arr[i] == arraySum[j]) {
+				if (result[i] == arraySum[j]) {
 					count++;
 				}
 			}
@@ -37,20 +35,35 @@ public class TestEA18 {
 
 	}
 
-	static int[] isUnique(int[] arr) {
-		int[] isUnique = new int[arr.length];
+	public static int[] removeDuplicates(int[] arraySum) {
+
+		int[] result = new int[arraySum.length - countDuplicates(arraySum)];
+
 		int index = 0;
 
-		sumArray(arr);
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] == arr[arr.length - 1 - i]) {
-				isUnique[index] = arr[i];
-				index++;
+		for (int i = 1; i < arraySum.length - 1; i++) {
 
+			if (arraySum[i] < arraySum[i + 1]) {
+				result[index] = arraySum[i];
+				index++;
 			}
 
 		}
-		return isUnique;
+		result[result.length - 1] = arraySum[arraySum.length - 1];
+
+		return result;
+
+	}
+
+	private static int countDuplicates(int[] arr) {
+		int count = 0;
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i] == arr[i + 1]) {
+				count++;
+			}
+		}
+		return count;
+
 	}
 
 	public static int[] sumArray(int[] arr) {
@@ -84,9 +97,8 @@ public class TestEA18 {
 	}
 
 	public static void main(String[] args) {
-		// System.out.println(countSums(new int[] { 1, 1, 2, 3 }));
+		System.out.println(countSums(new int[] { 1, 2, 3 }));
 		// System.out.println(Arrays.toString(sumArray(new int[] { 1, 1, 2, 3 })));
 		// System.out.println(arraySumDimension(new int[] { 1, 1, 2, 3 }));
-		System.out.println(Arrays.toString(isUnique(new int[] { 1, 1, 2, 3 })));
 	}
 }
