@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package com.ssn.ssijs.isi.recursivity;
+package work;
 
 import java.util.ArrayList;
 import java.util.List;

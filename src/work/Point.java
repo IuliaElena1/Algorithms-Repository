@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package com.ssn.ssijs.isi.recursivity;
+package work;
 
 /**
  * @author <a href="mailto:isilist@ssi-schaefer-noell.com">isilist</a>
