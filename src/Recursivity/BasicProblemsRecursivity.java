@@ -26,7 +26,6 @@ public class BasicProblemsRecursivity {
 
 	public static void main(String[] args) {
 		System.out.println(factorial(4));
-		System.out.println(fibonacci(6));
 	}
 
 }
