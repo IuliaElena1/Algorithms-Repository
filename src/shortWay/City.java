@@ -6,12 +6,11 @@ import java.util.Map;
 public class City {
 
 	private String name;
-	private Map<City, Integer> vecinii = new HashMap<>();
+	private Map<City, Integer> nearByCity = new HashMap<City, Integer>();
 
 	public City(String name) {
 		super();
 		this.name = name;
-
 	}
 
 	@Override
@@ -23,21 +22,23 @@ public class City {
 		return name;
 	}
 
-	public boolean containName(String nameCity) {
+	public Map<City, Integer> getNearByCity() {
+		return nearByCity;
+	}
+
+	public void addRouteNearByCity(City nameCity, int distance) {
+
+		nearByCity.put(nameCity, distance);
+	}
+
+	public boolean containsNameCity(String nameCity) {
 
 		if (this.name.equals(nameCity)) {
 			return true;
+
 		}
 		return false;
-	}
 
-	public void adaugaLegaturaCuCity(City fromCity, int km) {
-		vecinii.put(fromCity, km);
-
-	}
-
-	public Map<City, Integer> getVecinii() {
-		return vecinii;
 	}
 
 	@Override
@@ -45,7 +46,6 @@ public class City {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((vecinii == null) ? 0 : vecinii.hashCode());
 		return result;
 	}
 
@@ -63,12 +63,12 @@ public class City {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (vecinii == null) {
-			if (other.vecinii != null)
-				return false;
-		} else if (!vecinii.equals(other.vecinii))
-			return false;
 		return true;
+	}
+
+	public int displayDistance(City stop) {
+
+		return nearByCity.get(stop);
 	}
 
 }
