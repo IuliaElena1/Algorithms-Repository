@@ -4,7 +4,7 @@
  * $Header: /data/cvs/Scolarizare/cpopa/mpo_test11/src/com/ssn/ssijs/tests/path/RouteMap.java,v 1.1 2019/03/19 10:23:43 cpopa Exp $
  */
 
-package com.ssn.ssijs.tests.routemap;
+package MapApplication;
 
 /**
  * @author <a href="mailto:rveina@ssi-schaefer-noell.com">rveina</a>

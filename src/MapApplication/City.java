@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package com.ssn.ssijs.tests.routemap;
+package MapApplication;
 
 import java.util.HashMap;
 import java.util.Map;
