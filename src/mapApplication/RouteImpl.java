@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package MapApplication;
+package mapApplication;
 
 import java.util.ArrayList;
 import java.util.List;

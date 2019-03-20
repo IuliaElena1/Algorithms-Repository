@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package MapApplication;
+package mapApplication;
 
 import static org.junit.Assert.assertEquals;
 
