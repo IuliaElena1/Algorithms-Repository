@@ -1,10 +1,11 @@
 
-package theShortWayRecursivity;
+package routeMapAnotherSolution;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class City {
+
 	private String name;
 	private Map<City, Integer> neighbours = new HashMap<>();
 

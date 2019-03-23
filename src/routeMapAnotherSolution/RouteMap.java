@@ -1,5 +1,5 @@
 
-package theShortWayRecursivity;
+package routeMapAnotherSolution;
 
 public interface RouteMap {
 	public void addRoute(String from, String to, int distance);

@@ -1,5 +1,5 @@
 
-package theShortWayRecursivity;
+package routeMapAnotherSolution;
 
 import static org.junit.Assert.assertEquals;
 
