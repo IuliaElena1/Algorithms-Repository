@@ -1,18 +1,8 @@
-/*
- * Copyright (c) 2019 SSI Schaefer Noell GmbH
- *
- * $Header: $
- */
 
-package TheShortWayRecursivity;
+package theShortWayRecursivity;
 
 import java.util.HashMap;
 import java.util.Map;
-
-/**
- * @author <a href="mailto:rveina@ssi-schaefer-noell.com">rveina</a>
- * @version $Revision: $, $Date: $, $Author: $
- */
 
 public class City {
 	private String name;

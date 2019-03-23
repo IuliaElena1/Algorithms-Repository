@@ -1,19 +1,9 @@
-/*
- * Copyright (c) 2019 SSI Schaefer Noell GmbH
- *
- * $Header: $
- */
 
-package TheShortWayRecursivity;
+package theShortWayRecursivity;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-/**
- * @author <a href="mailto:rveina@ssi-schaefer-noell.com">rveina</a>
- * @version $Revision: $, $Date: $, $Author: $
- */
 
 public class RouteImpl implements RouteMap {
 	private List<City> cities = new ArrayList<City>();

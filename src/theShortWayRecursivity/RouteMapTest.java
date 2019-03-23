@@ -1,19 +1,9 @@
-/*
- * Copyright (c) 2018 SSI Schaefer Noell GmbH
- *
- * $Header: $
- */
 
-package TheShortWayRecursivity;
+package theShortWayRecursivity;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-/**
- * @author <a href="mailto:rveina@ssi-schaefer-noell.com">rveina</a>
- * @version $Revision: $, $Date: $, $Author: $
- */
 
 public class RouteMapTest {
 	RouteMap routeMap = new RouteImpl();
