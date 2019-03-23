@@ -4,7 +4,7 @@
  * $Header: $
  */
 
-package mapApplication;
+package TheShortWayRecursivity;
 
 import static org.junit.Assert.assertEquals;
 

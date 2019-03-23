@@ -31,7 +31,7 @@ public class Application {
 	}
 
 	private Person addFriend(Person personTwo, Friend list) {
-		gi
+
 		return null;
 	}
 
@@ -47,12 +47,11 @@ public class Application {
 
 	}
 
-	public static void main(String[] args) {
-		Application app = new Application();
-		app.addFriend("Ion", "Maria");
-		app.addFriend("Gigi", "Ion");
-		app.showFriend();
-	}
+	/*
+	 * public static void main(String[] args) { Application app = new Application();
+	 * app.addFriend("Ion", "Maria"); app.addFriend("Gigi", "Ion");
+	 * app.showFriend(); }
+	 */
 
 	public void showFriend() {
 		System.out.println(persons);

@@ -85,7 +85,7 @@ public class DepotImpl implements Depot {
 			destinatie[indexDestinatie] = (Linie) dest[i];
 			indexDestinatie++;
 		}
-		System.out.println("Macazul " + macaz.toString() + ": " + "linie sursa: " + linieSursa.toString() + ", "
+		System.out.println("Macazul " + macaz + ": " + "linie sursa: " + linieSursa.toString() + ", "
 				+ "linii destinatii: " + Arrays.deepToString(destinatie));
 
 	}

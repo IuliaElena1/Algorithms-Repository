@@ -14,14 +14,15 @@ public class Macaz {
 	private Linie linieSursa;
 	private Linie[] linieDestinatie;
 
-	public Macaz(String idMacaz) {
-		super();
-		this.idMacaz = idMacaz;
-	}
-
 	public Macaz(Object idMacaz) {
 		super();
 		this.idMacaz = idMacaz.toString();
+
+	}
+
+	public Macaz(String idMacaz) {
+		super();
+		this.idMacaz = idMacaz;
 	}
 
 	public Macaz() {
@@ -82,7 +83,7 @@ public class Macaz {
 
 	@Override
 	public String toString() {
-		return idMacaz + "";
+		return idMacaz;
 	}
 
 }
