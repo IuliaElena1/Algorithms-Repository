@@ -1,4 +1,4 @@
-package labirintRecursiv;
+package lAbirintRecursivNotCompleteYet;
 
 public class Point {
 
