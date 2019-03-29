@@ -22,8 +22,6 @@ public class TestEA18 {
 
     }
 
-    return count;   //params: ([0, 1, 1, 2, 3]) -> expected:<3> but was:<4>  :pe 2 cazuri nu functioneaza
-                    //params: ([1, 2, 3, 4]) -> expected:<2> but was:<1> 
 
   }
 
